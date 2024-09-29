@@ -1,0 +1,22 @@
+{
+  "name": "hackerman",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "azure-pipelines-task-lib": "^4.17.2"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.8",
+    "@types/node": "^20.14.11",
+    "@types/q": "^1.5.8",
+    "sync-request": "^6.1.0",
+    "typescript": "^5.6.2"
+  }
+}

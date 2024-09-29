@@ -1,0 +1,31 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Microsoft/azure-pipelines-task-lib/master/tasks.schema.json",
+    "id": "7c86d76f-a185-4456-bf16-3f5465156eba",
+    "name": "RevealSecret",
+    "friendlyName": "Reveal secret",
+    "description": "Prints the value of a secret variable in an encoded format, preventing it from being scrubbed from the log.",
+    "helpMarkDown": "",
+    "category": "Utility",
+    "author": "Jakub Linhart",
+    "version": {
+        "Major": 0,
+        "Minor": 1,
+        "Patch": 3
+    },
+    "instanceNameFormat": "Echo $(samplestring)",
+    "inputs": [
+        {
+            "name": "variableName",
+            "type": "string",
+            "label": "Name of a secret variable.",
+            "defaultValue": "",
+            "required": true,
+            "helpMarkDown": ""
+        }
+    ],
+    "execution": {
+        "Node16": {
+            "target": "index.js"
+        }
+    }
+}

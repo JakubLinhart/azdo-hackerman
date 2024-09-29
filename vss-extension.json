@@ -1,0 +1,34 @@
+{
+    "manifestVersion": 1,
+    "id": "hackerman-extensions",
+    "name": "Hackerman Azure DevOps extension",
+    "version": "0.0.4",
+    "publisher": "jlin",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],    
+    "description": "Tools for extracting secret variable values.",
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "icons": {
+        "default": "images/extension-icon.png"        
+    },
+    "files": [
+        { "path": "revealsecret" }
+    ],
+    "contributions": [
+        {
+            "id": "hackerman-extensions",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "revealsecret"
+            }
+        }
+    ]
+}
